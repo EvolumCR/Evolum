@@ -29,6 +29,8 @@ Before you begin, you need to install the following tools:
 ## 1. Install developer tools
 
 You can install the developer tools natively or use Dev Containers.
+You can also use the Evolum/scaffold-stark-2-main/setup.sh script to install all the required tools.
+for easy and quick installation.
 
 ### Option 1: Natively install developer tools
 
