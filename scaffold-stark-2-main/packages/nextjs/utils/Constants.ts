@@ -270,3 +270,14 @@ export {
   sepoliaMainnetStrkClassHash,
   universalErc20Abi,
 };
+
+// Application-wide constants
+
+export const APP_NAME = "Evolum"
+export const DEFAULT_API_VERSION = "v1";
+
+// Example: API base path
+export const API_BASE_PATH = `/api/${DEFAULT_API_VERSION}`;
+
+// Add other constants as needed
+// export const MAX_ITEMS_PER_PAGE = 10;

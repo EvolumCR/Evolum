@@ -6,46 +6,21 @@ import {
 } from "./deploy-contract";
 import { green } from "./helpers/colorize-log";
 
-/**
- * Deploy a contract using the specified parameters.
- *
- * @example (deploy contract with constructorArgs)
- * const deployScript = async (): Promise<void> => {
- *   await deployContract(
- *     {
- *       contract: "YourContract",
- *       contractName: "YourContractExportName",
- *       constructorArgs: {
- *         owner: deployer.address,
- *       },
- *       options: {
- *         maxFee: BigInt(1000000000000)
- *       }
- *     }
- *   );
- * };
- *
- * @example (deploy contract without constructorArgs)
- * const deployScript = async (): Promise<void> => {
- *   await deployContract(
- *     {
- *       contract: "YourContract",
- *       contractName: "YourContractExportName",
- *       options: {
- *         maxFee: BigInt(1000000000000)
- *       }
- *     }
- *   );
- * };
- *
- *
- * @returns {Promise<void>}
- */
 const deployScript = async (): Promise<void> => {
   await deployContract({
-    contract: "YourContract",
+    contract: "YourContract", // Mantén esto si aún lo necesitas
     constructorArgs: {
       owner: deployer.address,
+    },
+  });
+
+  // Añade el despliegue para UserRegistry
+  await deployContract({
+    contract: "UserRegistry", // Asegúrate que este es el nombre de tu archivo Cairo (sin .cairo)
+    constructorArgs: {
+      // Reemplaza deployer.address con la dirección de administrador que desees
+      // deployer.address es la cuenta que ejecuta el script de despliegue
+      initial_admin_address: deployer.address, 
     },
   });
 };
