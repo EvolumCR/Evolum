@@ -17,7 +17,7 @@ const deployScript = async (): Promise<void> => {
 
   // Despliegue para UserRegistry
   const userRegistryAddress = await deployContract({
-    contract: "UserRegistry", // Asegúrate que este es el nombre de tu archivo Cairo (sin .cairo)
+    contract: "IdentidadDescentralizada", // Asegúrate que este es el nombre de tu archivo Cairo (sin .cairo)
     constructorArgs: {
       // Reemplaza deployer.address con la dirección de administrador que desees
       // deployer.address es la cuenta que ejecuta el script de despliegue
