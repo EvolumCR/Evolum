@@ -1,8 +1,8 @@
 "use client";
 
 import { Dispatch, SetStateAction } from "react";
-import { InputBase, IntegerInput } from "~~/components/scaffold-stark";
-import { AbiParameter } from "~~/utils/scaffold-stark/contract";
+import { InputBase, IntegerInput } from "@/components/scaffold-stark";
+import { AbiParameter } from "@/utils/scaffold-stark/contract";
 import {
   addError,
   clearError,
@@ -18,7 +18,7 @@ import {
   isCairoTuple,
   isCairoType,
   isCairoU256,
-} from "~~/utils/scaffold-stark";
+} from "@/utils/scaffold-stark";
 import { Struct } from "./Struct";
 import { Abi } from "abi-wan-kanabi";
 import { ArrayInput } from "./Array";

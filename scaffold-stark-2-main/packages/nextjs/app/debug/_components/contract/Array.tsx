@@ -4,11 +4,11 @@ import {
   AbiEnum,
   AbiParameter,
   AbiStruct,
-} from "~~/utils/scaffold-stark/contract";
-import { replacer } from "~~/utils/scaffold-stark/common";
+} from "@/utils/scaffold-stark/contract";
+import { replacer } from "@/utils/scaffold-stark/common";
 import { ContractInput } from "./ContractInput";
 import { Abi } from "abi-wan-kanabi";
-import { parseGenericType } from "~~/utils/scaffold-stark";
+import { parseGenericType } from "@/utils/scaffold-stark";
 import { FormErrorMessageState } from "./utilsDisplay";
 
 type ArrayProps = {

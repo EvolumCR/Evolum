@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ConnectedAddress } from "~~/components/ConnectedAddress";
+import { ConnectedAddress } from "@/components/ConnectedAddress";
 
 const Home = () => {
   return (

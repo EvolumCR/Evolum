@@ -1,6 +1,6 @@
 import { DebugContracts } from "./_components/DebugContracts";
 import type { NextPage } from "next";
-import { getMetadata } from "~~/utils/scaffold-stark/getMetadata";
+import { getMetadata } from "@/utils/scaffold-stark/getMetadata";
 
 export const metadata = getMetadata({
   title: "Debug Contracts",

@@ -2,9 +2,9 @@
 
 import { useProvider } from "@starknet-react/core";
 import { useCallback, useState } from "react";
-import { useTargetNetwork } from "~~/hooks/scaffold-stark/useTargetNetwork";
-import configExternalContracts from "~~/contracts/configExternalContracts";
-import { deepMergeContracts } from "~~/utils/scaffold-stark/contract";
+import { useTargetNetwork } from "@/hooks/scaffold-stark/useTargetNetwork";
+import configExternalContracts from "@/contracts/configExternalContracts";
+import { deepMergeContracts } from "@/utils/scaffold-stark/contract";
 import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import prettier from "prettier/standalone";
