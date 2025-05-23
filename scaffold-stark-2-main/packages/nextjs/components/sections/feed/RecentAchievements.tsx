@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card"
-import { achievements } from "@/data/achievements"
+import { achievements } from "~/data/achievements"
 
 export function RecentAchievements() {
   return (
