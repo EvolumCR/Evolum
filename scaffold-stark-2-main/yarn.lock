@@ -2085,6 +2085,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/font@npm:^14.2.15":
+  version: 14.2.15
+  resolution: "@next/font@npm:14.2.15"
+  peerDependencies:
+    next: "*"
+  checksum: a9b79a69ff810352e9dd5fb3480b6f5ecf77f397f214bf31a999c208cce5a82d1c1bb46d6fe1553d38953d3ce313365ce492793d85757920961043acde041391
+  languageName: node
+  linkType: hard
+
 "@next/swc-darwin-arm64@npm:13.5.9":
   version: 13.5.9
   resolution: "@next/swc-darwin-arm64@npm:13.5.9"
@@ -3585,6 +3594,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@rolldown/pluginutils@npm:1.0.0-beta.9":
+  version: 1.0.0-beta.9
+  resolution: "@rolldown/pluginutils@npm:1.0.0-beta.9"
+  checksum: e554bf3d955f50136f93ede183278aff6f48d07e6c0d585b9dceae8a945713be551bfc456a830676881580fb60d48615e2479b5b76a49d6d9233c57a510c4b6a
+  languageName: node
+  linkType: hard
+
 "@rollup/plugin-babel@npm:^5.2.0":
   version: 5.3.1
   resolution: "@rollup/plugin-babel@npm:5.3.1"
@@ -5040,17 +5056,18 @@ __metadata:
   linkType: hard
 
 "@vitejs/plugin-react@npm:^4.3.4":
-  version: 4.4.1
-  resolution: "@vitejs/plugin-react@npm:4.4.1"
+  version: 4.5.0
+  resolution: "@vitejs/plugin-react@npm:4.5.0"
   dependencies:
     "@babel/core": ^7.26.10
     "@babel/plugin-transform-react-jsx-self": ^7.25.9
     "@babel/plugin-transform-react-jsx-source": ^7.25.9
+    "@rolldown/pluginutils": 1.0.0-beta.9
     "@types/babel__core": ^7.20.5
     react-refresh: ^0.17.0
   peerDependencies:
     vite: ^4.2.0 || ^5.0.0 || ^6.0.0
-  checksum: 62d941d9035f2625be636bc1ae941b4738f7458313fa66cb481b7662dd639b1849f0393ffb6abd3caaa2660f84764a6e71c5ef154fa8cfd8b30277fa6bb72cb6
+  checksum: b9b17f1ff4829154493785fea51fb141f85f2ca0900a27b06e03ab9269473f66f1ed309fc216154e39df08ed95dddb14c6044ef4481c9a411620877e9dee45c0
   languageName: node
   linkType: hard
 
@@ -12461,6 +12478,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ss-2@workspace:."
   dependencies:
+    "@next/font": ^14.2.15
     class-variance-authority: ^0.7.1
     clsx: ^2.1.1
     daisyui: ^4.7.3
@@ -14059,9 +14077,9 @@ __metadata:
   linkType: hard
 
 "webpack-sources@npm:^3.2.3":
-  version: 3.2.3
-  resolution: "webpack-sources@npm:3.2.3"
-  checksum: 989e401b9fe3536529e2a99dac8c1bdc50e3a0a2c8669cbafad31271eadd994bc9405f88a3039cd2e29db5e6d9d0926ceb7a1a4e7409ece021fe79c37d9c4607
+  version: 3.3.0
+  resolution: "webpack-sources@npm:3.3.0"
+  checksum: 3098025872b445f39ab873241303c111a11e832b88ef124d9988593af47f245db4e9a485c449cd63ec14ab2562139b009d15c255599eb9837b67d182519031ff
   languageName: node
   linkType: hard
 
@@ -14701,9 +14719,9 @@ __metadata:
   linkType: hard
 
 "zod@npm:^3.22.4":
-  version: 3.25.23
-  resolution: "zod@npm:3.25.23"
-  checksum: cec4666ef95aa6d43fb482c6f0585fd516f854d75c15e48633ec7542bba5e0b7cc38479cddc4eecce578dbeb7bcf258f29c6c5eb30c6dc5873b469448b32a501
+  version: 3.25.28
+  resolution: "zod@npm:3.25.28"
+  checksum: 14ee96fb475e2096300348f5ba2bb6a1f17586567ac32e26599766850a2d58bab31f95e2b264db79e753bdab0f251b61f0ef25fe8a2e55a06a661066aed467f4
   languageName: node
   linkType: hard
 

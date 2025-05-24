@@ -37,12 +37,7 @@ export function Sidebar() {
   return (
     <aside className="w-[260px] bg-white border-r h-screen flex flex-col justify-between py-4">
       <div>
-        <div className="px-6 py-2 mb-4 flex items-center gap-2">
-          <div className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-bold w-6 h-6 flex items-center justify-center rounded-full">
-            E
-          </div>
-          <span className="font-semibold text-xl text-zinc-800">Evolum</span>
-        </div>
+        
 
         <nav className="space-y-1">
           {navItems.map(({ label, href, icon, badge }) => {
