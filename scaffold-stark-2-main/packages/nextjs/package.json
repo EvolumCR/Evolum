@@ -24,6 +24,7 @@
     "@keplr-wallet/types": "^0.12.175",
     "@keplr-wallet/unit": "^0.12.175",
     "@radix-ui/react-icons": "1.3.0",
+    "@radix-ui/react-slot": "^1.2.3",
     "@radix-ui/themes": "2.0.3",
     "@scaffold-stark/stark-burner": "^0.1.9",
     "@starknet-io/types-js": "^0.8.1",
@@ -52,6 +53,7 @@
     "starknet": "^7.1.0",
     "tailwind-merge": "^3.3.0",
     "tailwind-variants": "^1.0.0",
+    "tw-animate-css": "^1.3.0",
     "type-fest": "^4.6.0",
     "usehooks-ts": "^2.13.0",
     "zustand": "^4.1.2"

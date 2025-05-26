@@ -3282,7 +3282,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@radix-ui/react-slot@npm:1.2.3, @radix-ui/react-slot@npm:^1.0.2":
+"@radix-ui/react-slot@npm:1.2.3, @radix-ui/react-slot@npm:^1.0.2, @radix-ui/react-slot@npm:^1.2.3":
   version: 1.2.3
   resolution: "@radix-ui/react-slot@npm:1.2.3"
   dependencies:
@@ -3920,6 +3920,7 @@ __metadata:
     "@keplr-wallet/types": ^0.12.175
     "@keplr-wallet/unit": ^0.12.175
     "@radix-ui/react-icons": 1.3.0
+    "@radix-ui/react-slot": ^1.2.3
     "@radix-ui/themes": 2.0.3
     "@scaffold-stark/stark-burner": ^0.1.9
     "@starknet-io/types-js": ^0.8.1
@@ -3967,6 +3968,7 @@ __metadata:
     tailwind-merge: ^3.3.0
     tailwind-variants: ^1.0.0
     tailwindcss: ^3.3.0
+    tw-animate-css: ^1.3.0
     type-fest: ^4.6.0
     typescript: ^5
     usehooks-ts: ^2.13.0
@@ -12483,10 +12485,13 @@ __metadata:
     clsx: ^2.1.1
     daisyui: ^4.7.3
     husky: ^9.0.11
+    lucide-react: ^0.511.0
     pinst: ^3.0.0
     postcss: ^8.4.38
     prettier: ^3.2.5
+    tailwind-merge: ^3.3.0
     tailwind-variants: ^1.0.0
+    tw-animate-css: ^1.3.0
   languageName: unknown
   linkType: soft
 
@@ -13358,6 +13363,13 @@ __metadata:
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
   checksum: e4aba30e632b8c8902b47587fd13345e2827fa639e7c3121074d5ee0880723282411a8838f830b55100cbe4517672f84a2472667d355b81e8af165a55dc6203a
+  languageName: node
+  linkType: hard
+
+"tw-animate-css@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "tw-animate-css@npm:1.3.0"
+  checksum: 4d5603d1a8ef1bf6e7a1d469ccdd8c0b03bfebc5e1953a9b1d0c193d04fde1edf89e2bb2d5e4080a1774973d7596519615fd5f5fd0a9ed582dfc54949e667880
   languageName: node
   linkType: hard
 
