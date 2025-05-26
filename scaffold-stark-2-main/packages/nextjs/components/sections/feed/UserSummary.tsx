@@ -1,53 +1,89 @@
-"use client"
+// components/sections/feed/UserSummary.tsx
+import React from 'react'
+import Image from 'next/image'
+import profilePic from '@/public/profilePic.jpg'  
+import { Card } from '@/components/ui/card'
+import { Progress } from '@/components/ui/progress'
+import { Button } from '@/components/ui/button'
 
-import { Card } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Progress } from "@/components/ui/progress"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
+export function UserSummary() {
+  const user = {
+    name: 'Ana Martínez',
+    username: '@anamartinez',
+    level: 12,
+    role: 'Explorador',
+    challenges: 42,
+    habits: 18,
+    followers: 156,
+    progressToNext: 65,
+  }
 
-export const UserSummary = () => {
   return (
-    <Card className="p-4 flex flex-col gap-4">
-      <div className="bg-gradient-to-r from-indigo-500 to-purple-500 h-16 rounded-t-md" />
+    <Card className="overflow-hidden rounded-lg">
+      {/* Header gradient */}
+      <div className="h-24 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-lg" />
 
-      <div className="-mt-10 flex flex-col items-center">
-        <div className="w-20 h-20 rounded-full border-4 border-white shadow-md bg-zinc-200 relative overflow-hidden">
-          {/* Profile image */}
-          <Image src="/avatar-placeholder.png" alt="Avatar" fill className="object-cover" />
+      <div className="px-4 pt-8 text-center relative">
+        {/* Avatar */}
+        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 w-20 h-20 rounded-full overflow-hidden border-4 border-white">
+          <Image
+            src={profilePic}
+            alt={`${user.name} avatar`}
+            width={80}
+            height={80}
+            className="object-cover"
+          />
         </div>
-        <h3 className="mt-2 text-lg font-semibold">Ana Martínez</h3>
-        <p className="text-sm text-zinc-500">@anamartinez</p>
 
-        <div className="flex gap-2 mt-2">
-          <Badge variant="secondary" className="bg-green-500 text-white text-xs">Level 12</Badge>
-          <Badge variant="secondary" className="bg-purple-500 text-white text-xs">Explorer</Badge>
+        {/* Nombre y usuario */}
+        <h3 className="mt-12 font-semibold text-lg">{user.name}</h3>
+        <p className="text-xs text-zinc-500">{user.username}</p>
+
+        {/* Badges */}
+        <div className="flex justify-center gap-2 mt-2">
+          <span className="bg-green-100 text-green-700 px-2 py-0.5 rounded-full text-xs">
+            Nivel {user.level}
+          </span>
+          <span className="border border-purple-200 text-purple-700 px-2 py-0.5 rounded-full text-xs">
+            {user.role}
+          </span>
+        </div>
+
+        {/* Barra de progreso con porcentaje */}
+        <div className="mt-4">
+          <div className="flex items-center justify-between text-xs mb-1">
+            <span>Progress at the level {user.level + 1}</span>
+            <span>{user.progressToNext}%</span>
+          </div>
+          <Progress
+            value={user.progressToNext}
+            className="h-2 rounded-full bg-gray-200/50"
+          />
+        </div>
+
+        {/* Estadísticas en tres columnas */}
+        <div className="grid grid-cols-3 mt-4 text-center">
+          <div>
+            <p className="font-semibold">{user.challenges}</p>
+            <p className="text-xs text-zinc-500">Retos</p>
+          </div>
+          <div>
+            <p className="font-semibold">{user.habits}</p>
+            <p className="text-xs text-zinc-500">Hábitos</p>
+          </div>
+          <div>
+            <p className="font-semibold">{user.followers}</p>
+            <p className="text-xs text-zinc-500">Seguidores</p>
+          </div>
+        </div>
+
+        {/* Botón “Ver perfil” */}
+        <div className="mt-4">
+          <Button className="w-full bg-gradient-to-r from-blue-500 to-purple-500 text-white">
+          View profile
+          </Button>
         </div>
       </div>
-
-      <div className="px-4">
-        <p className="text-xs text-zinc-500">Progress to level 13</p>
-        <Progress value={65} className="h-2 mt-1" />
-      </div>
-
-      <div className="flex justify-around mt-2 text-center text-sm">
-        <div>
-          <p className="font-bold text-zinc-700">42</p>
-          <p className="text-zinc-500 text-xs">Challenges</p>
-        </div>
-        <div>
-          <p className="font-bold text-zinc-700">18</p>
-          <p className="text-zinc-500 text-xs">Habits</p>
-        </div>
-        <div>
-          <p className="font-bold text-zinc-700">156</p>
-          <p className="text-zinc-500 text-xs">Followers</p>
-        </div>
-      </div>
-
-      <Button className="w-full mt-4 bg-gradient-to-r from-indigo-500 to-purple-500 text-white">
-        Edit profile
-      </Button>
     </Card>
   )
 }

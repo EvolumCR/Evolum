@@ -20,7 +20,7 @@ const navItems = [
   { label: "Retos", href: "/challenges", icon: <TrophyIcon className="w-4 h-4" />, badge: 3 },
   { label: "Hábitos", href: "/habits", icon: <CalendarIcon className="w-4 h-4" /> },
   { label: "Progreso", href: "/progress", icon: <LineChartIcon className="w-4 h-4" /> },
-  { label: "Comunidad", href: "/community", icon: <UsersIcon className="w-4 h-4" />, badge: 5 },
+  { label: "Comunidad", href: "/communities", icon: <UsersIcon className="w-4 h-4" />, badge: 5 },
   { label: "Perfil", href: "/profile", icon: <UserIcon className="w-4 h-4" /> },
 ]
 

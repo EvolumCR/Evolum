@@ -1,53 +1,63 @@
-"use client"
+import React from 'react';
+import { Card } from '@/components/ui/card';
+import { Brain, BookOpen, Activity } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
-import { Card } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { BoltIcon, BookOpenIcon, HeartIcon } from "lucide-react"
+interface Challenge {
+  id: string;
+  title: string;
+  description: string;
+  reward: number;
+  icon: React.ReactNode;
+}
 
-const challenges = [
+const challenges: Challenge[] = [
   {
-    title: "Meditación matutina",
-    description: "Medita durante 10 minutos al despertar",
-    difficulty: "Fácil",
-    icon: <HeartIcon className="w-5 h-5 text-blue-500" />,
-    tokens: 50,
+    id: '1',
+    title: 'Morning Meditation',
+    description: 'Meditate for 10 minutes upon waking',
+    reward: 50,
+    icon: <Brain className="w-6 h-6 text-blue-500" />
   },
   {
-    title: "Lectura diaria",
-    description: "Lee 20 páginas de un libro de desarrollo personal",
-    difficulty: "Medio",
-    icon: <BookOpenIcon className="w-5 h-5 text-purple-500" />,
-    tokens: 75,
+    id: '2',
+    title: 'Daily Reading',
+    description: 'Read 20 pages of a personal development book',
+    reward: 75,
+    icon: <BookOpen className="w-6 h-6 text-purple-500" />
   },
   {
-    title: "Ejercicio físico",
-    description: "Realiza 30 minutos de actividad física",
-    difficulty: "Medio",
-    icon: <BoltIcon className="w-5 h-5 text-green-500" />,
-    tokens: 100,
+    id: '3',
+    title: 'Physical Activity',
+    description: 'Do 30 minutes of physical exercise',
+    reward: 100,
+    icon: <Activity className="w-6 h-6 text-green-500" />
   },
-]
+];
 
 export function DailyChallenges() {
   return (
     <section>
-      <h2 className="text-lg font-semibold mb-2">Retos del día</h2>
-      <div className="flex flex-col md:flex-row gap-4">
-        {challenges.map((challenge, index) => (
-          <Card key={index} className="flex-1 p-4 space-y-2">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                {challenge.icon}
-                <span className="text-sm text-muted-foreground">{challenge.difficulty}</span>
-              </div>
+      <h2 className="text-lg font-semibold">Daily Challenges</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {challenges.map(challenge => (
+          <Card key={challenge.id} className="p-4 space-y-2">
+            <div className="flex items-center gap-2">
+              {challenge.icon}
+              <span className="uppercase text-xs font-medium text-zinc-500">
+                {challenge.title}
+              </span>
             </div>
-            <h3 className="font-medium">{challenge.title}</h3>
-            <p className="text-sm text-muted-foreground">{challenge.description}</p>
-            <p className="text-sm text-green-600 font-medium">{challenge.tokens} tokens</p>
-            <Button className="mt-2 w-full">Comenzar</Button>
+            <p className="text-sm text-zinc-700">{challenge.description}</p>
+            <div className="flex justify-between items-center">
+              <span className="text-sm font-semibold text-green-600">
+                {challenge.reward} tokens
+              </span>
+              <Button>Start</Button>
+            </div>
           </Card>
         ))}
       </div>
     </section>
-  )
+  );
 }
