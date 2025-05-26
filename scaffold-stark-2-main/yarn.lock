@@ -3968,6 +3968,7 @@ __metadata:
     tailwind-merge: ^3.3.0
     tailwind-variants: ^1.0.0
     tailwindcss: ^3.3.0
+    tailwindcss-animate: ^1.0.7
     tw-animate-css: ^1.3.0
     type-fest: ^4.6.0
     typescript: ^5
@@ -12872,6 +12873,15 @@ __metadata:
   peerDependencies:
     tailwindcss: "*"
   checksum: 3c9e6f438e569382ff9a6dee8d3e85a94e440c2baed27525705bb8dabd70c7f404f368621b5cf7dfc042d9a148aa6fc0fd7b8d236b081e4c2d1c7e82554d6991
+  languageName: node
+  linkType: hard
+
+"tailwindcss-animate@npm:^1.0.7":
+  version: 1.0.7
+  resolution: "tailwindcss-animate@npm:1.0.7"
+  peerDependencies:
+    tailwindcss: "*"
+  checksum: c1760983eb3fec0c8421e95082bf308e6845df43e2f90862386366e82545c801b26b4d189c4cd23d6915252b76d18005c8e5f591f8b119944c7fb8650d0f8bce
   languageName: node
   linkType: hard
 
